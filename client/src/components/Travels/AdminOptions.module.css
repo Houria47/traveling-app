@@ -1,0 +1,33 @@
+.adminOptions {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 0;
+  transition: var(--main-transition);
+  border-radius: 6px;
+  background-color: white;
+  overflow: hidden;
+}
+.adminOptions > * {
+  display: block;
+  padding: 10px 15px;
+  color: var(--main-color);
+  font-size: 1.5rem;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.adminOptions > *:hover {
+  background-color: #eee;
+}
+.icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+.icon:hover ~ .adminOptions,
+.adminOptions:hover {
+  opacity: 1;
+}

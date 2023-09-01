@@ -1,0 +1,35 @@
+.title {
+  text-align: center;
+  padding: 6.5rem 0;
+}
+.title span:not(.break) {
+  font-size: 3.5rem;
+  background-image: var(--main-color-grad);
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+  margin-left: 4px;
+  animation: change-color 3s infinite;
+}
+.break {
+  display: inline-block;
+  width: 15px;
+}
+@keyframes change-color {
+  0% {
+    background-color: blueviolet;
+  }
+  25% {
+    background: rgb(34, 248, 77);
+  }
+  50% {
+    background: rgb(233, 94, 117);
+  }
+  75% {
+    background: rgb(179, 224, 56);
+  }
+  100% {
+    background: rgb(200, 124, 52);
+  }
+}

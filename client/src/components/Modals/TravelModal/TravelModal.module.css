@@ -1,0 +1,135 @@
+.head {
+  text-align: center;
+}
+@media (min-width: 767px) {
+  .head {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+.imgBox {
+  width: 25rem;
+  height: 22rem;
+  overflow: hidden;
+}
+.imgBox img {
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.details {
+  flex: 1;
+  padding: 2rem;
+  min-width: 300px;
+}
+.details h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+.icon {
+  color: var(--main-color);
+  width: 20px;
+  margin-right: 5px;
+}
+.details p {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1rem 0;
+}
+.price {
+  font-size: 2rem;
+  padding-top: 1rem;
+  color: #333;
+}
+.price span {
+  font-size: 1.5rem;
+  color: #666;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+.details h4 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.details button {
+  margin: 5px 0 5px auto;
+  padding: 10px 15px;
+  background: #aaaaff;
+  display: block;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.details button:not(.disabled):hover {
+  background: var(--main-color-grad);
+}
+.details button.disabled {
+  background-color: #ccc;
+  cursor: no-drop;
+}
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.info > * {
+  flex: 1;
+}
+.info h2 {
+  font-size: 2rem;
+  border-left: 4px solid var(--main-color);
+  padding: 0 10px;
+  margin-block: 10px;
+}
+.services {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.services li {
+  width: 70px;
+}
+.services li img {
+  width: 100%;
+  height: 70px;
+}
+.services li h3 {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+.services > p {
+  font-size: 1.5rem;
+}
+.services li p {
+  font-size: 1rem;
+  color: #777;
+  padding: 0;
+}
+.addCartBtn {
+  margin-left: auto;
+}
+
+.addedToCart {
+  width: 300px;
+}
+.addedToCart img {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+.addedToCart p {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  text-align: center;
+}
+.needsToSign {
+  text-align: right;
+  font-size: 1.5rem;
+  color: #777;
+  margin-top: 10px;
+}

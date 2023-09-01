@@ -1,0 +1,15 @@
+.seats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+.seats li {
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: context-menu;
+  transition: var(--main-transition);
+}

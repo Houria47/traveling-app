@@ -1,0 +1,45 @@
+.bg {
+  background-image: url(./../../../assets/book-page-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: calc(100vh - var(--nav-height));
+}
+.head img {
+  max-height: 25rem;
+}
+.info {
+  flex: 1;
+}
+.info h1 {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+.info span {
+  font-size: 1.5rem;
+  color: #777;
+}
+.info p {
+  line-height: 1.7;
+  font-size: 1.5rem;
+  max-width: 400px;
+}
+
+.info a {
+  width: fit-content;
+}
+@media (max-width: 1200px) {
+  .head img {
+    display: none;
+  }
+  .info {
+    text-align: center;
+  }
+  .info p {
+    margin: auto;
+  }
+}

@@ -1,0 +1,7 @@
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 1.7rem;
+  color: var(--main-color);
+}

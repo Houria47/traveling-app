@@ -1,0 +1,59 @@
+.driverForm {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+.imgPreview {
+  text-align: center;
+}
+.imgBox {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+.imgPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 767px) {
+  .inputs {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 10px 60px;
+  }
+}
+.input {
+  margin-top: 10px;
+}
+.input label {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #666;
+}
+.input input,
+.input textarea {
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  color: #333;
+  text-transform: none;
+  transition: var(--main-transition);
+}
+.input input:focus,
+.input input:hover {
+  outline: none;
+  border-color: var(--main-color);
+}
+
+.driverForm small {
+  font-size: 1.2rem;
+  color: red;
+  margin-top: 5px;
+  display: inline-block;
+}

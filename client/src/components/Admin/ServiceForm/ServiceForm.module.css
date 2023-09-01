@@ -1,0 +1,70 @@
+.serviceForm {
+  margin-block: 50px;
+  display: grid;
+  place-items: center;
+}
+@media (min-width: 767px) {
+  .inputs {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto auto auto;
+    gap: 10px 60px;
+  }
+}
+.imgPreview {
+  text-align: center;
+  grid-column: 3;
+  grid-row: 1/-1;
+}
+.imgBox {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #ccc;
+  border: 1px solid #ddd;
+}
+.imgPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imgPreview label {
+  padding: 5px 10px;
+  width: fit-content;
+  margin: auto;
+}
+.input {
+  margin-top: 10px;
+}
+.input label {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #666;
+}
+.input input,
+.input select {
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.5rem;
+  color: #333;
+  text-transform: none;
+  transition: var(--main-transition);
+}
+.input input:focus,
+.input input:hover {
+  outline: none;
+  border-color: var(--main-color);
+}
+.serviceForm small {
+  font-size: 1.2rem;
+  color: red;
+  margin-top: 5px;
+  display: inline-block;
+}
+.serviceForm button {
+  margin-top: 20px;
+}

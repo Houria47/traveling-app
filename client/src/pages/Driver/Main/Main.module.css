@@ -1,0 +1,51 @@
+.driversList li img {
+  width: 100%;
+  max-height: 300px;
+}
+.driversList li h2 {
+  font-size: 2rem;
+  color: var(--main-color);
+  padding: 10px;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.main img {
+  max-height: 50rem;
+}
+.info {
+  flex: 1;
+}
+.info h1 {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+.info span {
+  font-size: 1.5rem;
+  color: #777;
+}
+.info p {
+  line-height: 1.7;
+  font-size: 1.5rem;
+  max-width: 400px;
+}
+
+.info a {
+  width: fit-content;
+}
+@media (max-width: 1200px) {
+  .main img {
+    display: none;
+  }
+  .info {
+    text-align: center;
+  }
+  .info p {
+    margin: auto;
+  }
+}

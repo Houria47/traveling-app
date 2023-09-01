@@ -1,0 +1,19 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+.imgBox {
+  flex: 1;
+}
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

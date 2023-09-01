@@ -1,0 +1,21 @@
+.imgInput {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.imgBox {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 80px;
+}
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imgInput .cancelBtn {
+  background-color: #c9c9c9;
+  color: #333;
+}

@@ -1,0 +1,44 @@
+.contactForm {
+  flex: 1;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  /* background: #bbdefb87; */
+}
+
+.inputRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.inputRow > div,
+.contactForm textarea {
+  width: 49%;
+  margin: 1rem 0;
+}
+.inputRow input,
+.contactForm textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 7px;
+  min-height: 40px;
+}
+@media (max-width: 767px) {
+  .inputRow input {
+    width: 100%;
+  }
+}
+.contactForm textarea {
+  height: 15rem;
+  width: 100%;
+}
+.contactForm small {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: red;
+}

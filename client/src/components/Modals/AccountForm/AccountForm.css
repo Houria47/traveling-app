@@ -1,0 +1,61 @@
+.accountForm form {
+  width: 46rem;
+  max-width: 100%;
+}
+.accountForm form h3 {
+  font-size: 3rem;
+  color: #444;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-align: center;
+}
+.accountForm form .input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  margin: 0.6rem 0;
+  text-transform: none;
+  transition: 0.3s;
+}
+.accountForm form .input.invalid {
+  border: 1px solid red;
+}
+.submit-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  background: #70b8d9ab;
+  transition: var(--main-transition);
+}
+.submit-btn:hover {
+  color: var(--text-color);
+  background: var(--main-color-grad);
+}
+.accountForm form .submit-btn {
+  display: block;
+  width: 100%;
+}
+.accountForm form #remember {
+  margin: 2rem 0;
+}
+.accountForm form label {
+  font-size: 1.5rem;
+}
+.accountForm form p {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #666;
+}
+.accountForm form p button {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.accountForm form small {
+  color: red;
+  font-size: 13px;
+}

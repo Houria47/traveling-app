@@ -1,0 +1,19 @@
+.deleteTrip {
+  padding: 10px;
+  text-align: center;
+}
+.deleteTrip h1 {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+.deleteTrip p {
+  font-size: 1.5rem;
+  margin: 20px auto;
+  color: #333;
+}
+.notFound {
+  margin: 10px;
+}
+.deleteTrip button {
+  margin: auto;
+}

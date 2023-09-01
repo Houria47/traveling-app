@@ -1,0 +1,25 @@
+.msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  font-size: 1.5rem;
+}
+.info {
+  color: #059;
+  background-color: #bef;
+}
+.success {
+  color: #270;
+  background-color: #dff2bf;
+}
+.warning {
+  color: #9f6000;
+  background-color: #feefb3;
+}
+.error {
+  color: #d8000c;
+  background-color: #ffbaba;
+}
+.icon {
+  margin-right: 10px;
+}

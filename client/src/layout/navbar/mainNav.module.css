@@ -1,0 +1,98 @@
+header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-image: var(--main-color-grad);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+  padding: 2rem 8%;
+}
+:root {
+  --nav-height: 76px;
+}
+@media (max-width: 800px) {
+  :root {
+    --nav-height: 70px;
+  }
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.logo span {
+  color: var(--main-color);
+}
+nav {
+  transition: all 0.5s linear;
+}
+@media (max-width: 800px) {
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--main-color);
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@media (min-width: 801px) {
+  nav ul {
+    display: flex;
+    gap: 20px;
+  }
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: #ddd;
+  font-weight: 600;
+  font-size: 1.6rem;
+  transition: all 0.5s linear;
+}
+nav ul li a:hover {
+  color: #fff;
+}
+@media (max-width: 800px) {
+  header nav a {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: var(--main-color-grad);
+  }
+}
+.iconBtn {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-right: 2rem;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.iconBtn:hover {
+  color: var(--main-color-grad);
+}
+.toggleBtn {
+  color: var(--text-color);
+  border: 0.1rem solid #fff;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 800px) {
+  .toggleBtn {
+    display: initial;
+  }
+}

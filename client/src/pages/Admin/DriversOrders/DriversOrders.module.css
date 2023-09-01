@@ -1,0 +1,69 @@
+.driversOrders {
+  min-height: 80vh;
+}
+.driversOrders h1 {
+  text-align: center;
+  margin-top: 4rem;
+}
+.driversOrders table {
+  margin-block: 2rem;
+  list-style: none;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  border-spacing: 0 15px;
+  border-collapse: separate;
+}
+.driversOrders table tr td,
+.driversOrders table tr th {
+  padding: 10px;
+}
+.driversOrders table thead tr {
+  background-color: var(--main-color);
+  color: white;
+}
+.driversOrders table tr {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: var(--main-transition);
+}
+.driversOrders table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+.driversOrders p {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.driversOrders .cancelBtn {
+  padding: 5px 10px;
+  background: #ddd;
+  color: #777;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.imgBox {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.driversOrders .actions > * {
+  margin: 0;
+  padding: 10px 15px;
+}
